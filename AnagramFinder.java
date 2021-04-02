@@ -7,31 +7,33 @@ import java.util.Map;
 import java.util.Set;
 import java.util.Arrays;
 
-class Anagram{
+class AnagramFinder{
   
-  public Anagram(String[] args){
+  public AnagramFinder(String[] args){
     if(args.length > 0) {
       //System.out.print("Dictionary: "+args[0]);
       this.play(args[0]);
     } else{
-      System.out.println("Error: dictionary not included. Please provide a text file. \n");
+      System.out.println("Error: argument not included. Please provide a text file. \n");
       System.exit(1);
     }
-    
-  } //constructor
-  
-  public static HashMap<String,Integer> sortByLength(String data, HashMap<String, Integer> sorted){
-    HashMap<String, Integer> hm = sorted;
-    alphabetize(data);
-    // System.out.println("data: "+data+" length: "+data.length());
-    hm.put(data, data.length());
-    return hm;
   }
   
-  public static HashMap<String,String> sortByAnagram(String data, HashMap<String, String> sorted){
-    HashMap<String, String> hm = sorted;
-    hm.put(data, alphabetize(data));
-    return hm;
+
+  
+  public static HashMap<String,Integer> mapByLength(Set<String> mySet){
+    HashMap<String, Integer> hashByLength = new HashMap<>();
+    for (String word : mySet) {
+       hashByLength.put(word, word.length());
+    }
+    return hashByLength;
+  }
+    public static HashMap<String,String> mapByAnagram(Set<String> mySet){
+    HashMap<String, String> hashByLetters = new HashMap<>();
+    for (String word : mySet) {
+      hashByLetters.put(word, alphabetize(word));
+    }
+    return hashByLetters;
   }
   
   public static String alphabetize(String word){
@@ -42,31 +44,26 @@ class Anagram{
     return sortedString;
   }
   
-  public static HashMap<String, Integer> getDictionary(String fromPath){
-    HashMap<String, Integer> dictionaryMappedByLength = new HashMap<>();
-    int count = 0; 
+  public static HashMap<String, String> readDictionary(String fromPath){
+    Set<String> myDictionary = new HashSet<>();
+    // int count = 0;
     
     try {
         File myFile = new File(fromPath);
         Scanner myReader = new Scanner(myFile);
         while (myReader.hasNextLine()) {
           String data = myReader.nextLine();
-          dictionaryMappedByLength = sortByLength(data, dictionaryMappedByLength);
-          count++;
+          myDictionary.add(data);
+          // count++;
         }
         myReader.close();
       } catch (FileNotFoundException e) {
         System.out.println("An error occurred: File not found.");
         e.printStackTrace();
       } 
-      System.out.println("File has "+count+" lines");
-      return dictionaryMappedByLength;
-  }
-  
-  public static String ask(String question, Scanner fromConsole){
-    System.out.print(question);
-    String answer = fromConsole.nextLine();
-    return answer;
+      // System.out.println("File has "+count+" lines");
+      HashMap<String, String> dictionaryMap = mapByAnagram(myDictionary);
+      return dictionaryMap;
   }
   
   public static <K, V> Set<K> getKeys(Map<K, V> map, V value) {
@@ -78,15 +75,16 @@ class Anagram{
         }
         return keys;
   }
-  public static Set<String> lookup(String input, HashMap<String, Integer> mydict){
-    Set<String> subDictionary = getKeys(mydict, input.length());
-    HashMap<String,String> mapByLettersOfAnagram = new HashMap<>();
-    
-    for (String word : subDictionary) {
-      mapByLettersOfAnagram = sortByAnagram(word, mapByLettersOfAnagram);  
-    }
-    
-    Set<String> setOfAnagrams = getKeys(mapByLettersOfAnagram, alphabetize(input));
+  
+  public static Set<String> lookup(String word, HashMap<String, Integer> mydict){
+    Set<String> subDictionary = getKeys(mydict, word.length());
+    HashMap<String,String> subHash = mapByAnagram(subDictionary);
+    Set<String> result = lookupAnagram(word, subHash);
+    return result;
+  }
+  
+  public static Set<String> lookupAnagram(String word, HashMap<String, String> mydict){
+    Set<String> setOfAnagrams = getKeys(mydict, alphabetize(word));
     return setOfAnagrams;
   }
   
@@ -95,7 +93,7 @@ class Anagram{
     System.out.println("---------------------------");
     
     long start = System.nanoTime();
-    HashMap<String, Integer> myDictionary = getDictionary(txtPath);
+    HashMap<String, String> myDictionary = readDictionary(txtPath);
     long finish = System.nanoTime();
     long timeElapsed = (finish - start) / 1000000;
     System.out.println("Dictionary loaded in "+timeElapsed+" ms\n");
@@ -104,14 +102,16 @@ class Anagram{
     boolean running = true;
     
     while(running){
-      String myWord = ask("AnagramFinder>", console);
+      System.out.print("AnagramFinder>");
+      String myWord = console.nextLine();
+      myWord = myWord.toLowerCase();
       if(myWord.equals("exit")){
         running = false; 
         console.close();
         break;
       }else{
         long begin = System.nanoTime();
-        System.out.println(lookup(myWord, myDictionary));
+        System.out.println(lookupAnagram(myWord, myDictionary));
         long end = System.nanoTime();
         long timed = (end - begin) / 1000000;
         System.out.println("Anagrams loaded in "+timed+" ms");
@@ -119,6 +119,14 @@ class Anagram{
     } 
   }
   public static void main(String[] args){
-    Anagram a = new Anagram(args);
+    if(args.length > 0){
+      System.out.println("Shell Detected->");
+      Main a = new Main(args);
+    }else{
+      System.out.println("Console Detected->");
+      String[] systemArgugments = new String[1];
+      systemArgugments[0] = "dictionary.txt";
+      AnagramFinder af = new AnagramFinder(systemArgugments);
+    }
   }
 }
