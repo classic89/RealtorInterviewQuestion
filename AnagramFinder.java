@@ -18,7 +18,7 @@ class AnagramFinder {
     }
   }
 
-  public static Map<String, String> mapByAnagram(Set<String> mySet) {
+  public static HashMap<String, String> mapByAnagram(Set<String> mySet) {
     HashMap<String, String> hashByLetters = new HashMap<>();
     for (String word : mySet) {
       hashByLetters.put(word, alphabetize(word));
@@ -33,7 +33,7 @@ class AnagramFinder {
     return sortedString;
   }
 
-  public static Map<String, Integer> readDictionary(String fromPath) { // Fuck String, String
+  public static HashMap<String, Integer> readDictionary(String fromPath) { // Fuck String, String
     HashMap<String, Integer> myDictionary = new HashMap<String, Integer>();
 
     try {
@@ -61,14 +61,14 @@ class AnagramFinder {
     return keys;
   }
 
-  public static Set<String> lookup(String word, Map<String, Integer> mydict) {
+  public static Set<String> lookup(String word, HashMap<String, Integer> mydict) {
     Set<String> subDictionary = getKeys(mydict, word.length());
     HashMap<String, String> subHash = mapByAnagram(subDictionary);
     Set<String> result = lookupAnagram(word, subHash);
     return result;
   }
 
-  public static Set<String> lookupAnagram(String word, Map<String, String> mydict) {
+  public static Set<String> lookupAnagram(String word, HashMap<String, String> mydict) {
     Set<String> setOfAnagrams = getKeys(mydict, alphabetize(word));
     return setOfAnagrams;
   }
