@@ -19,8 +19,6 @@ class AnagramFinder{
     }
   }
   
-
-  
   public static HashMap<String,Integer> mapByLength(Set<String> mySet){
     HashMap<String, Integer> hashByLength = new HashMap<>();
     for (String word : mySet) {
@@ -28,6 +26,7 @@ class AnagramFinder{
     }
     return hashByLength;
   }
+  
     public static HashMap<String,String> mapByAnagram(Set<String> mySet){
     HashMap<String, String> hashByLetters = new HashMap<>();
     for (String word : mySet) {
@@ -121,7 +120,7 @@ class AnagramFinder{
   public static void main(String[] args){
     if(args.length > 0){
       System.out.println("Shell Detected->");
-      Main a = new Main(args);
+      AnagramFinder af = new AnagramFinder(args);
     }else{
       System.out.println("Console Detected->");
       String[] systemArgugments = new String[1];
