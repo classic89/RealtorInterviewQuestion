@@ -11,7 +11,7 @@ class AnagramFinder {
 
   public AnagramFinder(String[] args) {
     if (args.length > 0) {
-      this.play(args[0]);
+      AnagramFinder.play(args[0]);
     } else {
       System.out.println("Error: argument not included. Please provide a text file. \n");
       System.exit(1);
@@ -95,11 +95,7 @@ class AnagramFinder {
         console.close();
         break;
       } else {
-        long begin = System.nanoTime();
         System.out.println(lookup(myWord, myDictionary));
-        long end = System.nanoTime();
-        long timed = (end - begin) / 1000000;
-        System.out.println("Anagrams loaded in " + timed + " ms");
       }
     }
   }
