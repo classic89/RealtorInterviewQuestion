@@ -41,7 +41,7 @@ class AnagramFinder {
       Scanner myReader = new Scanner(myFile);
       while (myReader.hasNextLine()) {
         String data = myReader.nextLine();
-        data.toLowerCase();
+        data = data.toLowerCase();
         myDictionary.put(data, data.length());
       }
       myReader.close();

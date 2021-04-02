@@ -5,3 +5,4 @@ dog
 cat
 act
 god
+SKATE
