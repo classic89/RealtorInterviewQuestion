@@ -20,18 +20,14 @@ class AnagramFinder {
 
   public AnagramFinder(String[] args) {
     if (args.length > 0) {
-      AnagramFinder.play(args[0]);
+      this.play(args[0]);
     } else {
       System.out.println("Error: argument not included. Please provide a text file. \n");
       System.exit(1);
     }
   }
 
-<<<<<<<
-  public static HashMap<String, String> mapByAnagram(Set<String> mySet) {
-=======
   public HashMap<String, String> mapByAnagram(Set<String> mySet) {
->>>>>>>
     HashMap<String, String> hashByLetters = new HashMap<>();
     for (String word : mySet) {
       hashByLetters.put(word, alphabetize(word));
@@ -46,11 +42,7 @@ class AnagramFinder {
     return sortedString;
   }
 
-<<<<<<<
-  public static HashMap<String, Integer> readDictionary(String fromPath) { // Fuck String, String
-=======
   public HashMap<String, Integer> readDictionary(String fromPath) {
->>>>>>>
     HashMap<String, Integer> myDictionary = new HashMap<String, Integer>();
 
     try {
@@ -58,7 +50,6 @@ class AnagramFinder {
       Scanner myReader = new Scanner(myFile);
       while (myReader.hasNextLine()) {
         String data = myReader.nextLine();
-        data = data.toLowerCase();
         myDictionary.put(data, data.length());
       }
       myReader.close();
@@ -79,22 +70,14 @@ class AnagramFinder {
     return keys;
   }
 
-<<<<<<<
-  public static Set<String> lookup(String word, HashMap<String, Integer> mydict) {
-=======
   public Set<String> lookup(String word, HashMap<String, Integer> mydict) {
->>>>>>>
     Set<String> subDictionary = getKeys(mydict, word.length());
     HashMap<String, String> subHash = mapByAnagram(subDictionary);
     Set<String> result = lookupAnagram(word, subHash);
     return result;
   }
 
-<<<<<<<
-  public static Set<String> lookupAnagram(String word, HashMap<String, String> mydict) {
-=======
   public Set<String> lookupAnagram(String word, HashMap<String, String> mydict) {
->>>>>>>
     Set<String> setOfAnagrams = getKeys(mydict, alphabetize(word));
     return setOfAnagrams;
   }
@@ -121,7 +104,11 @@ class AnagramFinder {
         console.close();
         break;
       } else {
+        long begin = System.nanoTime();
         System.out.println(lookup(myWord, myDictionary));
+        long end = System.nanoTime();
+        long timed = (end - begin) / 1000000;
+        System.out.println("Anagrams loaded in " + timed + " ms");
       }
     }
   }
