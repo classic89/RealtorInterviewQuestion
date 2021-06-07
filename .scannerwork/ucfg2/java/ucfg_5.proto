@@ -1,0 +1,60 @@
+
+JAnagramFinder#lookup(Ljava/lang/String;Ljava/util/HashMap;)Ljava/util/Set;P
+F/Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.javaA A(""1*
+1P
+F/Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.javaB  B('¢Ÿ
+P
+F/Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.javaB0 B(=	
+%0int"java.lang.String#length()I*
+
+wordjava.lang.String2length()ò
+ï
+P
+F/Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.javaB  B(>
+%1java.util.Set"GAnagramFinder#getKeys(Ljava/util/Map;Ljava/lang/Object;)Ljava/util/Set;*"
+AnagramFinder*
+
+mydictjava.util.HashMap*
+	
+%0int’
+
+P
+F/Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.javaB B(?
+subDictionaryjava.util.Set"__id*
+
+%1java.util.Setã
+à
+P
+F/Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.javaC& C(A
+%2java.util.HashMap">AnagramFinder#mapByAnagram(Ljava/util/Set;)Ljava/util/HashMap;*"
+AnagramFinder* 
+
+subDictionaryjava.util.Set”
+‘
+P
+F/Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.javaC C(B
+subHashjava.util.HashMap"__id*
+
+%2java.util.HashMapŒ
+‰
+P
+F/Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.javaD D(5
+%3java.util.Set"QAnagramFinder#lookupAnagram(Ljava/lang/String;Ljava/util/HashMap;)Ljava/util/Set;*"
+AnagramFinder*
+
+wordjava.lang.String*
+
+subHashjava.util.HashMap‹
+ˆ
+P
+F/Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.javaD D(6
+resultjava.util.Set"__id*
+
+%3java.util.Set"m
+P
+F/Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.javaE E(
+
+resultjava.util.Set:
+wordjava.lang.String:
+mydictjava.util.HashMapB"
+AnagramFinder
