@@ -75,37 +75,6 @@ class AnagramFinder {
   }
 
   public static void play(String txtPath) {
-    System.out.println("Hello!\n\n");
-    System.out.println("Hello!\n\n");
-    System.out.println("Hello!\n\n");
-    System.out.println("Hello!\n\n");
-    System.out.println("Hello!\n\n");
-    System.out.println("Hello!\n\n");
-    System.out.println("Hello!\n\n");
-    System.out.println("Hello!\n\n");
-    System.out.println("Hello!\n\n");
-    System.out.println("Hello!\n\n");
-    System.out.println("Hello!\n\n");
-    System.out.println("Hello!\n\n");
-    System.out.println("Hello!\n\n");
-    System.out.println("Hello!\n\n");
-    System.out.println("Hello!\n\n");
-    System.out.println("Hello!\n\n");
-    System.out.println("Hello!\n\n");
-    System.out.println("Hello!\n\n");
-    System.out.println("Hello!\n\n");
-    System.out.println("Hello!\n\n");
-    System.out.println("Hello!\n\n");
-    System.out.println("Hello!\n\n");
-    System.out.println("Hello!\n\n");
-    System.out.println("Hello!\n\n");
-    System.out.println("Hello!\n\n");
-    System.out.println("Hello!\n\n");
-    System.out.println("Hello!\n\n");
-    System.out.println("Hello!\n\n");
-    System.out.println("Hello!\n\n");
-    System.out.println("Hello!\n\n");
-
     System.out.println("\nWelcome to Anagram Finder");
     System.out.println("---------------------------");
 
