@@ -1,0 +1,557 @@
+16:00:42.527 WARN: Property 'sonar.verbose' with value 'true' is overridden with value 'true'
+16:00:42.535 INFO: Scanner configuration file: /usr/local/Cellar/sonar-scanner/4.6.2.2472/libexec/conf/sonar-scanner.properties
+16:00:42.535 INFO: Project root configuration file: NONE
+16:00:42.564 INFO: SonarScanner 4.6.2.2472
+16:00:42.564 INFO: Java 16.0.1 Homebrew (64-bit)
+16:00:42.564 INFO: Mac OS X 11.4 x86_64
+16:00:42.728 DEBUG: keyStore is : 
+16:00:42.728 DEBUG: keyStore type is : pkcs12
+16:00:42.728 DEBUG: keyStore provider is : 
+16:00:42.728 DEBUG: init keystore
+16:00:42.728 DEBUG: init keymanager of type SunX509
+16:00:42.858 DEBUG: Create: /Users/mlwilson/.sonar/cache
+16:00:42.859 INFO: User cache: /Users/mlwilson/.sonar/cache
+16:00:42.859 DEBUG: Create: /Users/mlwilson/.sonar/cache/_tmp
+16:00:42.861 DEBUG: Extract sonar-scanner-api-batch in temp...
+16:00:42.866 DEBUG: Get bootstrap index...
+16:00:42.866 DEBUG: Download: http://ee89-megan-us.ngrok.io/batch/index
+16:00:43.187 DEBUG: Get bootstrap completed
+16:00:43.190 DEBUG: Create isolated classloader...
+16:00:43.202 DEBUG: Start temp cleaning...
+16:00:43.207 DEBUG: Temp cleaning done
+16:00:43.207 INFO: Scanner configuration file: /usr/local/Cellar/sonar-scanner/4.6.2.2472/libexec/conf/sonar-scanner.properties
+16:00:43.208 INFO: Project root configuration file: NONE
+16:00:43.209 DEBUG: Execution getVersion
+16:00:43.227 INFO: Analyzing on SonarQube server 8.9.0
+16:00:43.227 INFO: Default locale: "en_US", source code encoding: "UTF-8" (analysis is platform dependent)
+16:00:43.227 DEBUG: Work directory: /Users/mlwilson/my_volumes/RealtorInterviewQuestion/.scannerwork
+16:00:43.228 DEBUG: Execution execute
+16:00:43.447 DEBUG: Enterprise 8.9.0.43852
+16:00:43.593 INFO: Load global settings
+16:00:43.785 DEBUG: GET 200 http://ee89-megan-us.ngrok.io/api/settings/values.protobuf | time=191ms
+16:00:43.820 INFO: Load global settings (done) | time=227ms
+16:00:43.824 INFO: Server id: BF41A1F2-AXmlRk9L_KdPVB0B9818
+16:00:43.827 INFO: User cache: /Users/mlwilson/.sonar/cache
+16:00:43.829 INFO: Load/download plugins
+16:00:43.829 INFO: Load plugins index
+16:00:43.932 DEBUG: GET 200 http://ee89-megan-us.ngrok.io/api/plugins/installed | time=102ms
+16:00:43.972 INFO: Load plugins index (done) | time=143ms
+16:00:44.196 INFO: Load/download plugins (done) | time=367ms
+16:00:44.353 DEBUG: Plugins:
+16:00:44.353 DEBUG:   * CSS Code Quality and Security 1.4.2.2002 (cssfamily)
+16:00:44.353 DEBUG:   * PL/SQL Code Quality and Security 3.6.1.3873 (plsql)
+16:00:44.353 DEBUG:   * Scala Code Quality and Security 1.8.3.2219 (sonarscala)
+16:00:44.353 DEBUG:   * C# Code Quality and Security 8.22.0.31243 (csharp)
+16:00:44.353 DEBUG:   * Vulnerability Analysis 8.9.0.11439 (security)
+16:00:44.353 DEBUG:   * Java Code Quality and Security 6.15.1.26025 (java)
+16:00:44.353 DEBUG:   * HTML Code Quality and Security 3.4.0.2754 (web)
+16:00:44.353 DEBUG:   * Flex Code Quality and Security 2.6.1.2564 (flex)
+16:00:44.353 DEBUG:   * XML Code Quality and Security 2.2.0.2973 (xml)
+16:00:44.354 DEBUG:   * VB.NET Code Quality and Security 8.22.0.31243 (vbnet)
+16:00:44.354 DEBUG:   * Swift Code Quality and Security 4.3.1.4892 (swift)
+16:00:44.354 DEBUG:   * CFamily Code Quality and Security 6.20.0.31240 (cpp)
+16:00:44.354 DEBUG:   * Python Code Quality and Security 3.4.1.8066 (python)
+16:00:44.354 DEBUG:   * Go Code Quality and Security 1.8.3.2219 (go)
+16:00:44.354 DEBUG:   * JaCoCo 1.1.1.1157 (jacoco)
+16:00:44.354 DEBUG:   * Kotlin Code Quality and Security 1.8.3.2219 (kotlin)
+16:00:44.354 DEBUG:   * RPG Code Quality 2.5.1.2575 (rpg)
+16:00:44.354 DEBUG:   * PL/I Code Quality and Security 1.11.1.2727 (pli)
+16:00:44.354 DEBUG:   * T-SQL Code Quality and Security 1.5.1.4340 (tsql)
+16:00:44.354 DEBUG:   * VB6 Code Quality and Security 2.7.1.2721 (vb)
+16:00:44.354 DEBUG:   * Apex Code Quality and Security 1.8.3.2219 (sonarapex)
+16:00:44.354 DEBUG:   * JavaScript/TypeScript Code Quality and Security 7.4.2.15501 (javascript)
+16:00:44.354 DEBUG:   * Ruby Code Quality and Security 1.8.3.2219 (ruby)
+16:00:44.354 DEBUG:   * Vulnerability Rules for C# 8.9.0.11439 (securitycsharpfrontend)
+16:00:44.355 DEBUG:   * Vulnerability Rules for Java 8.9.0.11439 (securityjavafrontend)
+16:00:44.355 DEBUG:   * License for SonarLint 8.9.0.43852 (license)
+16:00:44.355 DEBUG:   * Vulnerability Rules for JS 8.9.0.11439 (securityjsfrontend)
+16:00:44.355 DEBUG:   * COBOL Code Quality 4.6.2.4876 (cobol)
+16:00:44.355 DEBUG:   * Vulnerability Rules for Python 8.9.0.11439 (securitypythonfrontend)
+16:00:44.355 DEBUG:   * PHP Code Quality and Security 3.17.0.7439 (php)
+16:00:44.355 DEBUG:   * ABAP Code Quality and Security 3.9.1.3127 (abap)
+16:00:44.355 DEBUG:   * Vulnerability Rules for PHP 8.9.0.11439 (securityphpfrontend)
+16:00:44.390 INFO: Loaded core extensions: developer-scanner
+16:00:44.405 DEBUG: Installed core extension: developer-scanner
+16:00:44.682 INFO: JavaScript/TypeScript frontend is enabled
+16:00:44.855 INFO: Process project properties
+16:00:44.855 INFO: Process project properties (done) | time=0ms
+16:00:44.855 INFO: Execute project builders
+16:00:44.856 DEBUG: Execute project builder: org.sonar.plugins.csharp.CSharpGlobalProtobufFileProcessor
+16:00:44.856 DEBUG: Execute project builder: org.sonar.plugins.vbnet.VbNetGlobalProtobufFileProcessor
+16:00:44.857 INFO: Execute project builders (done) | time=2ms
+16:00:44.859 INFO: Project key: realtor
+16:00:44.859 INFO: Base dir: /Users/mlwilson/my_volumes/RealtorInterviewQuestion
+16:00:44.859 INFO: Working dir: /Users/mlwilson/my_volumes/RealtorInterviewQuestion/.scannerwork
+16:00:44.860 DEBUG: Project global encoding: UTF-8, default locale: en_US
+16:00:44.863 DEBUG: Creating module hierarchy
+16:00:44.863 DEBUG:   Init module 'realtor'
+16:00:44.864 DEBUG:     Base dir: /Users/mlwilson/my_volumes/RealtorInterviewQuestion
+16:00:44.864 DEBUG:     Working dir: /Users/mlwilson/my_volumes/RealtorInterviewQuestion/.scannerwork
+16:00:44.864 DEBUG:     Module global encoding: UTF-8, default locale: en_US
+16:00:44.999 INFO: Load project settings for component key: 'realtor'
+16:00:45.112 DEBUG: GET 200 http://ee89-megan-us.ngrok.io/api/settings/values.protobuf?component=realtor | time=113ms
+16:00:45.113 INFO: Load project settings for component key: 'realtor' (done) | time=114ms
+16:00:45.120 INFO: Load project branches
+16:00:45.217 DEBUG: GET 200 http://ee89-megan-us.ngrok.io/api/project_branches/list?project=realtor | time=97ms
+16:00:45.222 INFO: Load project branches (done) | time=102ms
+16:00:45.223 INFO: Load project pull requests
+16:00:45.318 DEBUG: GET 200 http://ee89-megan-us.ngrok.io/api/project_pull_requests/list?project=realtor | time=95ms
+16:00:45.321 INFO: Load project pull requests (done) | time=98ms
+16:00:45.321 INFO: Load branch configuration
+16:00:45.323 INFO: Load branch configuration (done) | time=2ms
+16:00:45.353 DEBUG: Available languages:
+16:00:45.353 DEBUG:   * CSS => "css"
+16:00:45.353 DEBUG:   * PL/SQL => "plsql"
+16:00:45.353 DEBUG:   * Scala => "scala"
+16:00:45.353 DEBUG:   * C# => "cs"
+16:00:45.353 DEBUG:   * Java => "java"
+16:00:45.353 DEBUG:   * HTML => "web"
+16:00:45.353 DEBUG:   * JSP => "jsp"
+16:00:45.353 DEBUG:   * Flex => "flex"
+16:00:45.353 DEBUG:   * XML => "xml"
+16:00:45.353 DEBUG:   * VB.NET => "vbnet"
+16:00:45.353 DEBUG:   * Swift => "swift"
+16:00:45.353 DEBUG:   * C => "c"
+16:00:45.353 DEBUG:   * C++ => "cpp"
+16:00:45.354 DEBUG:   * Objective-C => "objc"
+16:00:45.354 DEBUG:   * Python => "py"
+16:00:45.354 DEBUG:   * Go => "go"
+16:00:45.354 DEBUG:   * Kotlin => "kotlin"
+16:00:45.354 DEBUG:   * RPG => "rpg"
+16:00:45.354 DEBUG:   * PL/I => "pli"
+16:00:45.354 DEBUG:   * T-SQL => "tsql"
+16:00:45.354 DEBUG:   * Vb => "vb"
+16:00:45.354 DEBUG:   * Apex => "apex"
+16:00:45.354 DEBUG:   * JavaScript => "js"
+16:00:45.354 DEBUG:   * TypeScript => "ts"
+16:00:45.354 DEBUG:   * Ruby => "ruby"
+16:00:45.354 DEBUG:   * COBOL => "cobol"
+16:00:45.354 DEBUG:   * PHP => "php"
+16:00:45.354 DEBUG:   * ABAP => "abap"
+16:00:45.363 INFO: Load quality profiles
+16:00:45.495 DEBUG: GET 200 http://ee89-megan-us.ngrok.io/api/qualityprofiles/search.protobuf?project=realtor | time=131ms
+16:00:45.515 INFO: Load quality profiles (done) | time=152ms
+16:00:45.519 INFO: Load active rules
+16:00:45.644 DEBUG: GET 200 http://ee89-megan-us.ngrok.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AXmlRzBlpOmZMyx-lPQz&ps=500&p=1 | time=125ms
+16:00:45.839 DEBUG: GET 200 http://ee89-megan-us.ngrok.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AXmlRzEOpOmZMyx-lPSQ&ps=500&p=1 | time=119ms
+16:00:45.941 DEBUG: GET 200 http://ee89-megan-us.ngrok.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AXmlRzGppOmZMyx-lPSw&ps=500&p=1 | time=99ms
+16:00:46.162 DEBUG: GET 200 http://ee89-megan-us.ngrok.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AXmlRzHDpOmZMyx-lPYX&ps=500&p=1 | time=220ms
+16:00:46.419 DEBUG: GET 200 http://ee89-megan-us.ngrok.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AXmlRzMnpOmZMyx-lPf7&ps=500&p=1 | time=193ms
+16:00:46.560 DEBUG: GET 200 http://ee89-megan-us.ngrok.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AXmlRzPhpOmZMyx-lPjq&ps=500&p=1 | time=127ms
+16:00:46.757 DEBUG: GET 200 http://ee89-megan-us.ngrok.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AXmlRzR8pOmZMyx-lPow&ps=500&p=1 | time=193ms
+16:00:47.155 DEBUG: GET 200 http://ee89-megan-us.ngrok.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AXmlRzVepOmZMyx-lP5x&ps=500&p=1 | time=389ms
+16:00:47.386 DEBUG: GET 200 http://ee89-megan-us.ngrok.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AXmlRzY9pOmZMyx-lQB_&ps=500&p=1 | time=122ms
+16:00:47.522 DEBUG: GET 200 http://ee89-megan-us.ngrok.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AXmlRzdopOmZMyx-lQEn&ps=500&p=1 | time=134ms
+16:00:47.644 DEBUG: GET 200 http://ee89-megan-us.ngrok.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AXmlRzbapOmZMyx-lQC1&ps=500&p=1 | time=119ms
+16:00:47.818 DEBUG: GET 200 http://ee89-megan-us.ngrok.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AXmlRzgUpOmZMyx-lQJI&ps=500&p=1 | time=173ms
+16:00:47.962 DEBUG: GET 200 http://ee89-megan-us.ngrok.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AXmlRzjepOmZMyx-lQNG&ps=500&p=1 | time=141ms
+16:00:48.302 DEBUG: GET 200 http://ee89-megan-us.ngrok.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AXmlRzmipOmZMyx-lQZ7&ps=500&p=1 | time=338ms
+16:00:48.590 DEBUG: GET 200 http://ee89-megan-us.ngrok.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AXmlRzp_pOmZMyx-lQmT&ps=500&p=1 | time=235ms
+16:00:48.717 DEBUG: GET 200 http://ee89-megan-us.ngrok.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AXmlRzvHpOmZMyx-lQr7&ps=500&p=1 | time=121ms
+16:00:48.845 DEBUG: GET 200 http://ee89-megan-us.ngrok.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AXmlRzxfpOmZMyx-lQtc&ps=500&p=1 | time=127ms
+16:00:48.971 DEBUG: GET 200 http://ee89-megan-us.ngrok.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AXmlRzshpOmZMyx-lQqi&ps=500&p=1 | time=125ms
+16:00:49.089 DEBUG: GET 200 http://ee89-megan-us.ngrok.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AXmlRz7upOmZMyx-lQyr&ps=500&p=1 | time=117ms
+16:00:49.230 DEBUG: GET 200 http://ee89-megan-us.ngrok.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AXmlRz0HpOmZMyx-lQv2&ps=500&p=1 | time=140ms
+16:00:49.352 DEBUG: GET 200 http://ee89-megan-us.ngrok.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AXmlRz5fpOmZMyx-lQxr&ps=500&p=1 | time=120ms
+16:00:49.475 DEBUG: GET 200 http://ee89-megan-us.ngrok.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AXmlRz94pOmZMyx-lQ0B&ps=500&p=1 | time=122ms
+16:00:49.749 DEBUG: GET 200 http://ee89-megan-us.ngrok.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AXmlR0BUpOmZMyx-lQ9C&ps=500&p=1 | time=272ms
+16:00:49.917 DEBUG: GET 200 http://ee89-megan-us.ngrok.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AXmlR0DmpOmZMyx-lREJ&ps=500&p=1 | time=159ms
+16:00:50.112 DEBUG: GET 200 http://ee89-megan-us.ngrok.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AXmlR0GupOmZMyx-lRKH&ps=500&p=1 | time=192ms
+16:00:50.257 DEBUG: GET 200 http://ee89-megan-us.ngrok.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AXmlR0N5pOmZMyx-lRRZ&ps=500&p=1 | time=140ms
+16:00:50.494 DEBUG: GET 200 http://ee89-megan-us.ngrok.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AXmlR0TzpOmZMyx-lRg8&ps=500&p=1 | time=234ms
+16:00:50.706 DEBUG: GET 200 http://ee89-megan-us.ngrok.io/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt,updatedAt,deprecatedKeys&activation=true&qprofile=AXmlR0QtpOmZMyx-lRXw&ps=500&p=1 | time=206ms
+16:00:50.721 INFO: Load active rules (done) | time=5202ms
+16:00:50.794 DEBUG: Declared extensions of language CSS were converted to sonar.lang.patterns.css : **/*.css,**/*.less,**/*.scss
+16:00:50.794 DEBUG: Declared extensions of language PL/SQL were converted to sonar.lang.patterns.plsql : **/*.sql,**/*.pks,**/*.pkb
+16:00:50.794 DEBUG: Declared extensions of language Scala were converted to sonar.lang.patterns.scala : **/*.scala
+16:00:50.794 DEBUG: Declared extensions of language C# were converted to sonar.lang.patterns.cs : **/*.cs
+16:00:50.794 DEBUG: Declared extensions of language Java were converted to sonar.lang.patterns.java : **/*.java,**/*.jav
+16:00:50.795 DEBUG: Declared extensions of language HTML were converted to sonar.lang.patterns.web : **/*.html,**/*.xhtml,**/*.cshtml,**/*.vbhtml,**/*.aspx,**/*.ascx,**/*.rhtml,**/*.erb,**/*.shtm,**/*.shtml
+16:00:50.795 DEBUG: Declared extensions of language JSP were converted to sonar.lang.patterns.jsp : **/*.jsp,**/*.jspf,**/*.jspx
+16:00:50.795 DEBUG: Declared extensions of language Flex were converted to sonar.lang.patterns.flex : **/*.as
+16:00:50.796 DEBUG: Declared extensions of language XML were converted to sonar.lang.patterns.xml : **/*.xml,**/*.xsd,**/*.xsl
+16:00:50.796 DEBUG: Declared extensions of language VB.NET were converted to sonar.lang.patterns.vbnet : **/*.vb
+16:00:50.796 DEBUG: Declared extensions of language Swift were converted to sonar.lang.patterns.swift : **/*.swift
+16:00:50.796 DEBUG: Declared extensions of language C were converted to sonar.lang.patterns.c : **/*.c,**/*.h
+16:00:50.796 DEBUG: Declared extensions of language C++ were converted to sonar.lang.patterns.cpp : **/*.cc,**/*.cpp,**/*.cxx,**/*.c++,**/*.hh,**/*.hpp,**/*.hxx,**/*.h++,**/*.ipp
+16:00:50.797 DEBUG: Declared extensions of language Objective-C were converted to sonar.lang.patterns.objc : **/*.m
+16:00:50.797 DEBUG: Declared extensions of language Python were converted to sonar.lang.patterns.py : **/*.py
+16:00:50.797 DEBUG: Declared extensions of language Go were converted to sonar.lang.patterns.go : **/*.go
+16:00:50.797 DEBUG: Declared extensions of language Kotlin were converted to sonar.lang.patterns.kotlin : **/*.kt
+16:00:50.797 DEBUG: Declared extensions of language RPG were converted to sonar.lang.patterns.rpg : **/*.rpg,**/*.rpgle,**/*.rpg,**/*.rpgle
+16:00:50.797 DEBUG: Declared extensions of language PL/I were converted to sonar.lang.patterns.pli : **/*.pli
+16:00:50.797 DEBUG: Declared extensions of language T-SQL were converted to sonar.lang.patterns.tsql : **/*.tsql
+16:00:50.798 DEBUG: Declared extensions of language Vb were converted to sonar.lang.patterns.vb : **/*.vb,**/*.bas,**/*.frm,**/*.ctl,**/*.vb,**/*.bas,**/*.frm,**/*.ctl
+16:00:50.798 DEBUG: Declared extensions of language Apex were converted to sonar.lang.patterns.apex : **/*.cls,**/*.trigger
+16:00:50.798 DEBUG: Declared extensions of language JavaScript were converted to sonar.lang.patterns.js : **/*.js,**/*.jsx,**/*.mjs,**/*.vue
+16:00:50.798 DEBUG: Declared extensions of language TypeScript were converted to sonar.lang.patterns.ts : **/*.ts,**/*.tsx
+16:00:50.798 DEBUG: Declared extensions of language Ruby were converted to sonar.lang.patterns.ruby : **/*.rb
+16:00:50.798 DEBUG: Declared extensions of language COBOL were converted to sonar.lang.patterns.cobol : 
+16:00:50.798 DEBUG: Declared extensions of language PHP were converted to sonar.lang.patterns.php : **/*.php,**/*.php3,**/*.php4,**/*.php5,**/*.phtml,**/*.inc
+16:00:50.799 DEBUG: Declared extensions of language ABAP were converted to sonar.lang.patterns.abap : **/*.abap,**/*.ab4,**/*.flow,**/*.asprog
+16:00:50.800 DEBUG: Will ignore generated code
+16:00:50.800 DEBUG: Will ignore generated code
+16:00:50.803 INFO: Indexing files...
+16:00:50.803 INFO: Project configuration:
+16:00:50.819 DEBUG: loading config FileBasedConfig[/Users/mlwilson/.config/jgit/config]
+16:00:50.820 DEBUG: readpipe [bash, --login, -c, which git],/Users/mlwilson
+16:00:50.838 DEBUG: readpipe may return '/usr/bin/git'
+16:00:50.838 DEBUG: remaining output:
+
+16:00:50.838 DEBUG: readpipe [xcode-select, -p],/Users/mlwilson
+16:00:50.844 DEBUG: readpipe may return '/Library/Developer/CommandLineTools'
+16:00:50.844 DEBUG: remaining output:
+
+16:00:50.844 DEBUG: readpipe [/usr/bin/git, --version],/usr/bin
+16:00:50.859 DEBUG: readpipe may return 'git version 2.30.1 (Apple Git-130)'
+16:00:50.860 DEBUG: remaining output:
+
+16:00:50.860 DEBUG: readpipe [/usr/bin/git, config, --system, --edit],/usr/bin
+16:00:50.877 DEBUG: readpipe may return '/private/etc/gitconfig'
+16:00:50.877 DEBUG: remaining output:
+
+16:00:50.878 DEBUG: loading config FileBasedConfig[/private/etc/gitconfig]
+16:00:50.878 DEBUG: loading config FileBasedConfig[/Users/mlwilson/.gitconfig]
+16:00:50.927 DEBUG: 25 non excluded files in this Git repository
+16:00:50.937 DEBUG: 'anagram.docx' indexed with no language
+16:00:50.939 DEBUG: 'realtorInterviewQuestion/dictionary.txt' indexed with no language
+16:00:50.941 DEBUG: 'realtorInterviewQuestion/AnagramFinder.java' indexed with language 'java'
+16:00:50.942 DEBUG: '{"Health":"GREEN","Health Causes":[],"Sy.json' indexed with no language
+16:00:50.944 DEBUG: 'target/dependency/junit-4.13.2.jar' indexed with no language
+16:00:50.945 DEBUG: 'target/dependency/hamcrest-core-1.3.jar' indexed with no language
+16:00:50.946 DEBUG: 'TestAnagramFinder.class' indexed with no language
+16:00:50.947 DEBUG: 'AnagramFinderTest.java' indexed with language 'java'
+16:00:50.948 DEBUG: 'TestAnagramFinder.java' indexed with language 'java'
+16:00:50.949 DEBUG: 'dictionary.txt' indexed with no language
+16:00:50.949 DEBUG: 'pom.xml' indexed with language 'xml'
+16:00:50.950 DEBUG: 'log.txt' indexed with no language
+16:00:50.950 DEBUG: 'mockdict.txt' indexed with no language
+16:00:50.951 DEBUG: 'realtorInterviewQuestion.zip' indexed with no language
+16:00:50.951 DEBUG: 'Main.java' indexed with language 'java'
+16:00:50.952 DEBUG: 'AnagramFinder.java' indexed with language 'java'
+16:00:50.952 DEBUG: 'Main.class' indexed with no language
+16:00:50.953 DEBUG: 'AnagramFinder.class' indexed with no language
+16:00:50.954 INFO: 18 files indexed
+16:00:50.954 INFO: 0 files ignored because of scm ignore settings
+16:00:50.955 INFO: Quality profile for java: Sonar way
+16:00:50.955 INFO: Quality profile for xml: Sonar way
+16:00:50.955 INFO: ------------- Run sensors on module realtor
+16:00:51.081 INFO: JavaScript/TypeScript frontend is enabled
+16:00:51.112 INFO: Load metrics repository
+16:00:51.214 DEBUG: GET 200 http://ee89-megan-us.ngrok.io/api/metrics/search?f=name,description,direction,qualitative,custom&ps=500&p=1 | time=102ms
+16:00:51.223 INFO: Load metrics repository (done) | time=110ms
+16:00:52.493 DEBUG: Adding rules for repository 'jssecurity', language: JAVASCRIPT, [class A.A.A.A.A.A.B, class A.A.A.A.A.A.I, class A.A.A.A.A.A.K, class A.A.A.A.A.A.L, class A.A.A.A.A.A.M, class A.A.A.A.A.A.C, class A.A.A.A.A.A.G, class A.A.A.A.A.A.H, class A.A.A.A.A.A.J, class A.A.A.A.A.A.F, class A.A.A.A.A.A.D, class A.A.A.A.A.A.E, class A.A.A.A.A.A.A] from A.A.A.A.A.D
+16:00:52.499 DEBUG: Adding rules for repository 'tssecurity', language: TYPESCRIPT, [class A.A.A.A.A.A.B, class A.A.A.A.A.A.I, class A.A.A.A.A.A.K, class A.A.A.A.A.A.L, class A.A.A.A.A.A.M, class A.A.A.A.A.A.C, class A.A.A.A.A.A.G, class A.A.A.A.A.A.H, class A.A.A.A.A.A.J, class A.A.A.A.A.A.F, class A.A.A.A.A.A.D, class A.A.A.A.A.A.E, class A.A.A.A.A.A.A] from A.A.A.A.A.B
+16:00:52.930 DEBUG: 'CobolSquidSensor' skipped because there is no related file in current project
+16:00:52.930 DEBUG: 'Import external issues report' skipped because one of the required properties is missing
+16:00:52.931 DEBUG: 'CSS Metrics' skipped because there is no related file in current project
+16:00:52.931 DEBUG: 'Import of stylelint issues' skipped because there is no related file in current project
+16:00:52.931 DEBUG: 'PL/SQL Sensor' skipped because there is no related file in current project
+16:00:52.931 DEBUG: 'Scala Sensor' skipped because there is no related file in current project
+16:00:52.932 DEBUG: 'Scoverage sensor for Scala coverage' skipped because there is no related file in current project
+16:00:52.932 DEBUG: 'Import of Scalastyle issues' skipped because there is no related file in current project
+16:00:52.932 DEBUG: 'Import of Scapegoat issues' skipped because there is no related file in current project
+16:00:52.932 DEBUG: 'Import of Checkstyle issues' skipped because one of the required properties is missing
+16:00:52.933 DEBUG: 'Import of PMD issues' skipped because one of the required properties is missing
+16:00:52.933 DEBUG: 'Import of SpotBugs issues' skipped because one of the required properties is missing
+16:00:52.934 DEBUG: 'Removed properties sensor' skipped because one of the required properties is missing
+16:00:52.934 DEBUG: 'Flex' skipped because there is no related file in current project
+16:00:52.934 DEBUG: 'Flex Cobertura' skipped because there is no related file in current project
+16:00:52.934 DEBUG: 'Swift Code Quality and Security' skipped because there is no related file in current project
+16:00:52.935 DEBUG: 'Import of SwiftLint issues' skipped because there is no related file in current project
+16:00:52.935 DEBUG: 'gcov' skipped because there is no related file in current project
+16:00:52.936 DEBUG: 'llvm-cov' skipped because there is no related file in current project
+16:00:52.936 DEBUG: 'cppunit' skipped because there is no related file in current project
+16:00:52.936 DEBUG: 'VisualStudioCoverage' skipped because there is no related file in current project
+16:00:52.936 DEBUG: 'bullseye' skipped because there is no related file in current project
+16:00:52.936 DEBUG: 'Python Sensor' skipped because there is no related file in current project
+16:00:52.937 DEBUG: 'Cobertura Sensor for Python coverage' skipped because there is no related file in current project
+16:00:52.937 DEBUG: 'PythonXUnitSensor' skipped because there is no related file in current project
+16:00:52.937 DEBUG: 'Import of Pylint issues' skipped because there is no related file in current project
+16:00:52.937 DEBUG: 'Import of Bandit issues' skipped because there is no related file in current project
+16:00:52.938 DEBUG: 'Import of Flake8 issues' skipped because there is no related file in current project
+16:00:52.938 DEBUG: 'Code Quality and Security for Go' skipped because there is no related file in current project
+16:00:52.938 DEBUG: 'Go Unit Test Report' skipped because there is no related file in current project
+16:00:52.939 DEBUG: 'Go Cover sensor for Go coverage' skipped because one of the required properties is missing
+16:00:52.939 DEBUG: 'Import of go vet issues' skipped because there is no related file in current project
+16:00:52.939 DEBUG: 'Import of Golint issues' skipped because there is no related file in current project
+16:00:52.939 DEBUG: 'Import of GoMetaLinter issues' skipped because there is no related file in current project
+16:00:52.939 DEBUG: 'Import of GolangCI-Lint issues' skipped because there is no related file in current project
+16:00:52.940 DEBUG: 'Kotlin Sensor' skipped because there is no related file in current project
+16:00:52.940 DEBUG: 'KotlinSurefireSensor' skipped because there is no related file in current project
+16:00:52.940 DEBUG: 'Import of detekt issues' skipped because there is no related file in current project
+16:00:52.940 DEBUG: 'Import of Android Lint issues' skipped because one of the required properties is missing
+16:00:52.940 DEBUG: 'RPG sensor' skipped because there is no related file in current project
+16:00:52.941 DEBUG: 'PliSquidSensor' skipped because there is no related file in current project
+16:00:52.941 DEBUG: 'T-SQL Sensor' skipped because there is no related file in current project
+16:00:52.941 DEBUG: 'VbSquidSensor' skipped because there is no related file in current project
+16:00:52.941 DEBUG: 'Apex Sensor' skipped because there is no related file in current project
+16:00:52.941 DEBUG: 'Test coverage Sensor for Apex' skipped because there is no related file in current project
+16:00:52.942 DEBUG: 'Import of PMD issues' skipped because there is no related file in current project
+16:00:52.942 DEBUG: 'JavaScript analysis' skipped because there is no related file in current project
+16:00:52.943 DEBUG: 'TypeScript analysis' skipped because there is no related file in current project
+16:00:52.943 DEBUG: 'JavaScript/TypeScript Coverage' skipped because there is no related file in current project
+16:00:52.943 DEBUG: 'Import of ESLint issues' skipped because one of the required properties is missing
+16:00:52.944 DEBUG: 'Import of TSLint issues' skipped because one of the required properties is missing
+16:00:52.944 DEBUG: 'Ruby Sensor' skipped because there is no related file in current project
+16:00:52.944 DEBUG: 'Import of RuboCop issues' skipped because there is no related file in current project
+16:00:52.944 DEBUG: 'SimpleCov Sensor for Ruby coverage' skipped because there is no related file in current project
+16:00:52.944 DEBUG: 'Python HTML templates processing' skipped because there is no related file in current project
+16:00:52.945 DEBUG: 'PHP sensor' skipped because there is no related file in current project
+16:00:52.945 DEBUG: 'Analyzer for "php.ini" files' skipped because there is no related file in current project
+16:00:52.945 DEBUG: 'AbapSquidSensor' skipped because there is no related file in current project
+16:00:52.949 DEBUG: 'Generic Test Executions Report' skipped because one of the required properties is missing
+16:00:52.949 DEBUG: 'CFamily' skipped because there is no related file in current project
+16:00:52.949 DEBUG: Sensors : JavaSquidSensor -> CSS Rules -> C# Project Type Information -> C# Properties -> SurefireSensor -> JavaXmlSensor -> HTML -> XML Sensor -> VB.NET Project Type Information -> VB.NET Properties -> JaCoCo XML Report Importer -> ThymeLeaf template sensor -> JavaSecuritySensor -> CSharpSecuritySensor -> PhpSecuritySensor -> PythonSecuritySensor -> JsSecuritySensor
+16:00:52.950 INFO: Sensor JavaSquidSensor [java]
+16:00:53.285 INFO: Configured Java source version (sonar.java.source): none
+16:00:53.294 INFO: JavaClasspath initialization
+16:00:53.296 DEBUG: Property 'sonar.java.jdkHome' resolved with:
+[]
+16:00:53.296 DEBUG: Property 'sonar.java.libraries' resolved with:
+[]
+16:00:53.296 INFO: JavaClasspath initialization (done) | time=2ms
+16:00:53.296 INFO: JavaTestClasspath initialization
+16:00:53.296 DEBUG: Property 'sonar.java.jdkHome' resolved with:
+[]
+16:00:53.297 DEBUG: Property 'sonar.java.test.libraries' resolved with:
+[]
+16:00:53.297 INFO: JavaTestClasspath initialization (done) | time=1ms
+16:00:53.305 DEBUG: Found 0 JSP files.
+16:00:53.305 INFO: Java Main Files AST scan
+16:00:53.307 INFO: 5 source files to be analyzed
+16:00:53.317 INFO: Load project repositories
+16:00:53.417 DEBUG: GET 200 http://ee89-megan-us.ngrok.io/batch/project.protobuf?key=realtor | time=100ms
+16:00:53.425 INFO: Load project repositories (done) | time=108ms
+16:00:53.425 DEBUG: 'AnagramFinder.java' generated metadata with charset 'UTF-8'
+16:00:54.401 DEBUG: [SE] Loaded 179 hardcoded method behaviors.
+16:00:55.048 DEBUG: Analysis time of AnagramFinder.java (1740ms)
+16:00:55.051 DEBUG: 'realtorInterviewQuestion/AnagramFinder.java' generated metadata with charset 'UTF-8'
+16:00:55.292 DEBUG: 'TestAnagramFinder.java' generated metadata with charset 'UTF-8'
+16:00:55.415 DEBUG: 'Main.java' generated metadata with charset 'UTF-8'
+16:00:55.452 DEBUG: 'AnagramFinderTest.java' generated metadata with charset 'UTF-8'
+16:00:55.511 INFO: 5/5 source files have been analyzed
+16:00:55.513 WARN: Dependencies/libraries were not provided for analysis of SOURCE files. The 'sonar.java.libraries' property is empty. Verify your configuration, as you might end up with less precise results.
+16:00:55.513 WARN: Unresolved imports/types have been detected during analysis. Enable DEBUG mode to see them.
+16:00:55.513 DEBUG: Unresolved imports/types:
+- Test cannot be resolved to a type
+- The import org.junit cannot be resolved
+16:00:55.513 INFO: Java Main Files AST scan (done) | time=2208ms
+16:00:55.514 INFO: Java Test Files AST scan
+16:00:55.514 INFO: 0 source files to be analyzed
+16:00:55.514 INFO: 0/0 source files have been analyzed
+16:00:55.514 INFO: Java Test Files AST scan (done) | time=0ms
+16:00:55.514 INFO: Java Generated Files AST scan
+16:00:55.515 INFO: 0 source files to be analyzed
+16:00:55.515 INFO: 0/0 source files have been analyzed
+16:00:55.515 INFO: Java Generated Files AST scan (done) | time=1ms
+16:00:55.515 INFO: Sensor JavaSquidSensor [java] (done) | time=2565ms
+16:00:55.515 INFO: Sensor CSS Rules [cssfamily]
+16:00:55.516 INFO: No CSS, PHP, HTML or VueJS files are found in the project. CSS analysis is skipped.
+16:00:55.516 INFO: Sensor CSS Rules [cssfamily] (done) | time=1ms
+16:00:55.516 INFO: Sensor C# Project Type Information [csharp]
+16:00:55.517 INFO: Sensor C# Project Type Information [csharp] (done) | time=1ms
+16:00:55.517 INFO: Sensor C# Properties [csharp]
+16:00:55.517 DEBUG: Project 'realtor': Property missing: 'sonar.cs.analyzer.projectOutPaths'. No protobuf files will be loaded for this project.
+16:00:55.518 DEBUG: Project 'realtor': No Roslyn issues reports have been found.
+16:00:55.518 INFO: Sensor C# Properties [csharp] (done) | time=1ms
+16:00:55.518 INFO: Sensor SurefireSensor [java]
+16:00:55.518 INFO: parsing [/Users/mlwilson/my_volumes/RealtorInterviewQuestion/target/surefire-reports]
+16:00:55.519 INFO: Sensor SurefireSensor [java] (done) | time=1ms
+16:00:55.519 INFO: Sensor JavaXmlSensor [java]
+16:00:55.520 INFO: 1 source file to be analyzed
+16:00:55.521 DEBUG: 'pom.xml' generated metadata with charset 'UTF-8'
+16:00:55.717 INFO: 1/1 source file has been analyzed
+16:00:55.718 INFO: Sensor JavaXmlSensor [java] (done) | time=198ms
+16:00:55.718 INFO: Sensor HTML [web]
+16:00:55.720 INFO: Sensor HTML [web] (done) | time=2ms
+16:00:55.720 INFO: Sensor XML Sensor [xml]
+16:00:55.722 INFO: 1 source file to be analyzed
+16:00:55.813 DEBUG: Count lines in file:///Users/mlwilson/my_volumes/RealtorInterviewQuestion/pom.xml
+16:00:55.826 INFO: 1/1 source file has been analyzed
+16:00:55.827 INFO: Sensor XML Sensor [xml] (done) | time=107ms
+16:00:55.827 INFO: Sensor VB.NET Project Type Information [vbnet]
+16:00:55.828 INFO: Sensor VB.NET Project Type Information [vbnet] (done) | time=0ms
+16:00:55.828 INFO: Sensor VB.NET Properties [vbnet]
+16:00:55.828 DEBUG: Project 'realtor': Property missing: 'sonar.vbnet.analyzer.projectOutPaths'. No protobuf files will be loaded for this project.
+16:00:55.828 DEBUG: Project 'realtor': No Roslyn issues reports have been found.
+16:00:55.828 INFO: Sensor VB.NET Properties [vbnet] (done) | time=0ms
+16:00:55.828 INFO: Sensor JaCoCo XML Report Importer [jacoco]
+16:00:55.829 INFO: 'sonar.coverage.jacoco.xmlReportPaths' is not defined. Using default locations: target/site/jacoco/jacoco.xml,target/site/jacoco-it/jacoco.xml,build/reports/jacoco/test/jacocoTestReport.xml
+16:00:55.830 INFO: No report imported, no coverage information will be imported by JaCoCo XML Report Importer
+16:00:55.830 INFO: Sensor JaCoCo XML Report Importer [jacoco] (done) | time=2ms
+16:00:55.830 INFO: Sensor ThymeLeaf template sensor [securityjavafrontend]
+16:00:55.830 INFO: Sensor ThymeLeaf template sensor [securityjavafrontend] (done) | time=0ms
+16:00:55.831 INFO: Sensor JavaSecuritySensor [security]
+16:00:55.831 INFO: Reading type hierarchy from: /Users/mlwilson/my_volumes/RealtorInterviewQuestion/.scannerwork/ucfg2/java
+16:00:55.894 INFO: Read 40 type definitions
+16:00:55.896 INFO: Reading UCFGs from: /Users/mlwilson/my_volumes/RealtorInterviewQuestion/.scannerwork/ucfg2/java
+16:00:55.943 DEBUG: Excluding 18 UCFGs as they are using the same method Ids.
+16:00:55.945 INFO: 16:00:55.944972 Building Runtime Type propagation graph
+16:00:55.948 INFO: 16:00:55.94821 Running Tarjan on 30 nodes
+16:00:55.949 INFO: 16:00:55.949045 Tarjan found 30 components
+16:00:55.950 INFO: 16:00:55.950311 Variable type analysis: done
+16:00:55.950 INFO: 16:00:55.950638 Building Runtime Type propagation graph
+16:00:55.951 INFO: 16:00:55.951254 Running Tarjan on 30 nodes
+16:00:55.951 INFO: 16:00:55.951468 Tarjan found 30 components
+16:00:55.951 INFO: 16:00:55.951621 Variable type analysis: done
+16:00:55.952 INFO: Analyzing 6 ucfgs to detect vulnerabilities.
+16:00:56.019 DEBUG: Resource file javasecurity/sources/S5131.json was not read
+16:00:56.021 DEBUG: loaded 289 sources for rule S5131
+16:00:56.027 DEBUG: Resource file javasecurity/sinks/common.json was not read
+16:00:56.030 DEBUG: loaded 31 sinks for rule S5131
+16:00:56.037 DEBUG: Resource file javasecurity/sources/S3649.json was not read
+16:00:56.037 DEBUG: loaded 289 sources for rule S3649
+16:00:56.038 DEBUG: Resource file javasecurity/sinks/common.json was not read
+16:00:56.043 DEBUG: loaded 277 sinks for rule S3649
+16:00:56.054 DEBUG: Resource file javasecurity/sources/S2076.json was not read
+16:00:56.055 DEBUG: loaded 289 sources for rule S2076
+16:00:56.055 DEBUG: Resource file javasecurity/sinks/common.json was not read
+16:00:56.057 DEBUG: loaded 15 sinks for rule S2076
+16:00:56.060 DEBUG: Resource file javasecurity/sources/S2091.json was not read
+16:00:56.060 DEBUG: loaded 289 sources for rule S2091
+16:00:56.061 DEBUG: Resource file javasecurity/sinks/common.json was not read
+16:00:56.062 DEBUG: loaded 23 sinks for rule S2091
+16:00:56.065 DEBUG: Resource file javasecurity/sources/S2078.json was not read
+16:00:56.066 DEBUG: loaded 289 sources for rule S2078
+16:00:56.066 DEBUG: Resource file javasecurity/sinks/common.json was not read
+16:00:56.068 DEBUG: loaded 191 sinks for rule S2078
+16:00:56.072 DEBUG: Resource file javasecurity/sources/S2631.json was not read
+16:00:56.072 DEBUG: loaded 289 sources for rule S2631
+16:00:56.073 DEBUG: Resource file javasecurity/sinks/common.json was not read
+16:00:56.073 DEBUG: loaded 8 sinks for rule S2631
+16:00:56.075 DEBUG: Resource file javasecurity/sources/S5135.json was not read
+16:00:56.075 DEBUG: loaded 289 sources for rule S5135
+16:00:56.076 DEBUG: Resource file javasecurity/sinks/common.json was not read
+16:00:56.077 DEBUG: loaded 9 sinks for rule S5135
+16:00:56.079 DEBUG: Resource file javasecurity/sources/S2083.json was not read
+16:00:56.079 DEBUG: loaded 289 sources for rule S2083
+16:00:56.080 DEBUG: Resource file javasecurity/sinks/common.json was not read
+16:00:56.081 DEBUG: loaded 165 sinks for rule S2083
+16:00:56.085 DEBUG: Resource file javasecurity/sources/S5167.json was not read
+16:00:56.085 DEBUG: loaded 289 sources for rule S5167
+16:00:56.085 DEBUG: Resource file javasecurity/sinks/common.json was not read
+16:00:56.086 DEBUG: loaded 22 sinks for rule S5167
+16:00:56.088 DEBUG: Resource file javasecurity/sources/S5144.json was not read
+16:00:56.088 DEBUG: loaded 289 sources for rule S5144
+16:00:56.088 DEBUG: Resource file javasecurity/sinks/common.json was not read
+16:00:56.089 DEBUG: loaded 72 sinks for rule S5144
+16:00:56.092 DEBUG: Resource file javasecurity/sources/S5145.json was not read
+16:00:56.093 DEBUG: loaded 289 sources for rule S5145
+16:00:56.093 DEBUG: Resource file javasecurity/sinks/common.json was not read
+16:00:56.094 DEBUG: loaded 204 sinks for rule S5145
+16:00:56.098 DEBUG: Resource file javasecurity/sources/S5146.json was not read
+16:00:56.099 DEBUG: loaded 289 sources for rule S5146
+16:00:56.099 DEBUG: Resource file javasecurity/sinks/common.json was not read
+16:00:56.099 DEBUG: loaded 32 sinks for rule S5146
+16:00:56.101 DEBUG: Resource file javasecurity/sources/S5334.json was not read
+16:00:56.101 DEBUG: loaded 289 sources for rule S5334
+16:00:56.102 DEBUG: Resource file javasecurity/sinks/common.json was not read
+16:00:56.103 DEBUG: loaded 91 sinks for rule S5334
+16:00:56.106 DEBUG: loaded 303 sources for rule S6096
+16:00:56.106 DEBUG: Resource file javasecurity/sinks/common.json was not read
+16:00:56.107 DEBUG: loaded 165 sinks for rule S6096
+16:00:56.111 INFO: All rules entrypoints : 0 Retained UCFGs : 0
+16:00:56.113 INFO: rule: S5131, entrypoints: 0
+16:00:56.113 INFO: rule: S5131 done
+16:00:56.113 INFO: rule: S3649, entrypoints: 0
+16:00:56.113 INFO: rule: S3649 done
+16:00:56.113 INFO: rule: S2076, entrypoints: 0
+16:00:56.113 INFO: rule: S2076 done
+16:00:56.113 INFO: rule: S2091, entrypoints: 0
+16:00:56.113 INFO: rule: S2091 done
+16:00:56.113 INFO: rule: S2078, entrypoints: 0
+16:00:56.113 INFO: rule: S2078 done
+16:00:56.113 INFO: rule: S2631, entrypoints: 0
+16:00:56.113 INFO: rule: S2631 done
+16:00:56.113 INFO: rule: S5135, entrypoints: 0
+16:00:56.113 INFO: rule: S5135 done
+16:00:56.113 INFO: rule: S2083, entrypoints: 0
+16:00:56.113 INFO: rule: S2083 done
+16:00:56.113 INFO: rule: S5167, entrypoints: 0
+16:00:56.113 INFO: rule: S5167 done
+16:00:56.114 INFO: rule: S5144, entrypoints: 0
+16:00:56.114 INFO: rule: S5144 done
+16:00:56.114 INFO: rule: S5145, entrypoints: 0
+16:00:56.114 INFO: rule: S5145 done
+16:00:56.114 INFO: rule: S5146, entrypoints: 0
+16:00:56.114 INFO: rule: S5146 done
+16:00:56.114 INFO: rule: S5334, entrypoints: 0
+16:00:56.114 INFO: rule: S5334 done
+16:00:56.114 INFO: rule: S6096, entrypoints: 0
+16:00:56.114 INFO: rule: S6096 done
+16:00:56.114 INFO: Sensor JavaSecuritySensor [security] (done) | time=283ms
+16:00:56.114 INFO: Sensor CSharpSecuritySensor [security]
+16:00:56.114 INFO: Reading type hierarchy from: /Users/mlwilson/my_volumes/RealtorInterviewQuestion/ucfg_cs2
+16:00:56.114 INFO: Read 0 type definitions
+16:00:56.114 INFO: Reading UCFGs from: /Users/mlwilson/my_volumes/RealtorInterviewQuestion/ucfg_cs2
+16:00:56.114 INFO: No UCFGs have been included for analysis.
+16:00:56.114 INFO: Sensor CSharpSecuritySensor [security] (done) | time=0ms
+16:00:56.114 INFO: Sensor PhpSecuritySensor [security]
+16:00:56.114 INFO: Reading type hierarchy from: /Users/mlwilson/my_volumes/RealtorInterviewQuestion/.scannerwork/ucfg2/php
+16:00:56.114 INFO: Read 0 type definitions
+16:00:56.114 INFO: Reading UCFGs from: /Users/mlwilson/my_volumes/RealtorInterviewQuestion/.scannerwork/ucfg2/php
+16:00:56.114 INFO: No UCFGs have been included for analysis.
+16:00:56.114 INFO: Sensor PhpSecuritySensor [security] (done) | time=0ms
+16:00:56.115 INFO: Sensor PythonSecuritySensor [security]
+16:00:56.115 INFO: Reading type hierarchy from: /Users/mlwilson/my_volumes/RealtorInterviewQuestion/.scannerwork/ucfg2/python
+16:00:56.115 INFO: Read 0 type definitions
+16:00:56.115 INFO: Reading UCFGs from: /Users/mlwilson/my_volumes/RealtorInterviewQuestion/.scannerwork/ucfg2/python
+16:00:56.115 INFO: No UCFGs have been included for analysis.
+16:00:56.115 INFO: Sensor PythonSecuritySensor [security] (done) | time=0ms
+16:00:56.115 INFO: Sensor JsSecuritySensor [security]
+16:00:56.115 INFO: Reading type hierarchy from: /Users/mlwilson/my_volumes/RealtorInterviewQuestion/.scannerwork/ucfg2/js
+16:00:56.115 INFO: Read 0 type definitions
+16:00:56.115 INFO: Reading UCFGs from: /Users/mlwilson/my_volumes/RealtorInterviewQuestion/.scannerwork/ucfg2/js
+16:00:56.115 INFO: No UCFGs have been included for analysis.
+16:00:56.115 INFO: Sensor JsSecuritySensor [security] (done) | time=0ms
+16:00:56.118 INFO: ------------- Run sensors on project
+16:00:56.127 DEBUG: 'Generic Coverage Report' skipped because one of the required properties is missing
+16:00:56.127 DEBUG: 'C#' skipped because there is no related file in current project
+16:00:56.128 DEBUG: 'C# Tests Coverage Report Import' skipped because there is no related file in current project
+16:00:56.128 DEBUG: '[Deprecated] C# Integration Tests Coverage Report Import' skipped because there is no related file in current project
+16:00:56.128 DEBUG: 'C# Unit Test Results Import' skipped because there is no related file in current project
+16:00:56.128 DEBUG: 'VB.NET' skipped because there is no related file in current project
+16:00:56.129 DEBUG: 'VB.NET Tests Coverage Report Import' skipped because there is no related file in current project
+16:00:56.129 DEBUG: '[Deprecated] VB.NET Integration Tests Coverage Report Import' skipped because there is no related file in current project
+16:00:56.129 DEBUG: 'VB.NET Unit Test Results Import' skipped because there is no related file in current project
+16:00:56.129 DEBUG: Sensors : Zero Coverage Sensor -> Java CPD Block Indexer
+16:00:56.129 INFO: Sensor Zero Coverage Sensor
+16:00:56.137 INFO: Sensor Zero Coverage Sensor (done) | time=8ms
+16:00:56.137 INFO: Sensor Java CPD Block Indexer
+16:00:56.143 DEBUG: Populating index from AnagramFinder.java
+16:00:56.155 DEBUG: Populating index from realtorInterviewQuestion/AnagramFinder.java
+16:00:56.159 DEBUG: Populating index from TestAnagramFinder.java
+16:00:56.161 DEBUG: Populating index from Main.java
+16:00:56.161 DEBUG: Not enough content in 'Main.java' to have CPD blocks, it will not be part of the duplication detection
+16:00:56.161 DEBUG: Populating index from AnagramFinderTest.java
+16:00:56.162 INFO: Sensor Java CPD Block Indexer (done) | time=25ms
+16:00:56.171 INFO: CPD Executor 1 file had no CPD blocks
+16:00:56.171 INFO: CPD Executor Calculating CPD for 4 files
+16:00:56.172 DEBUG: Detection of duplications for /Users/mlwilson/my_volumes/RealtorInterviewQuestion/TestAnagramFinder.java
+16:00:56.182 DEBUG: Detection of duplications for /Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinderTest.java
+16:00:56.182 DEBUG: Detection of duplications for /Users/mlwilson/my_volumes/RealtorInterviewQuestion/realtorInterviewQuestion/AnagramFinder.java
+16:00:56.184 DEBUG: Detection of duplications for /Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.java
+16:00:56.185 INFO: CPD Executor CPD calculation finished (done) | time=14ms
+16:00:56.195 DEBUG: SCM revision ID '67307bdf69b8439d721fcccf6e8e60d8de7a88c8'
+16:00:56.195 INFO: Load New Code definition
+16:00:56.292 DEBUG: GET 200 http://ee89-megan-us.ngrok.io/api/new_code_periods/show.protobuf?project=realtor&branch=master | time=97ms
+16:00:56.293 INFO: Load New Code definition (done) | time=98ms
+16:00:56.347 INFO: Analysis report generated in 159ms, dir size=209 KB
+16:00:56.389 INFO: Analysis report compressed in 42ms, zip size=42 KB
+16:00:56.390 INFO: Analysis report generated in /Users/mlwilson/my_volumes/RealtorInterviewQuestion/.scannerwork/scanner-report
+16:00:56.390 DEBUG: Upload report
+16:00:56.631 DEBUG: POST 200 http://ee89-megan-us.ngrok.io/api/ce/submit?projectKey=realtor | time=241ms
+16:00:56.633 INFO: Analysis report uploaded in 243ms
+16:00:56.635 DEBUG: Report metadata written to /Users/mlwilson/my_volumes/RealtorInterviewQuestion/.scannerwork/report-task.txt
+16:00:56.635 INFO: ANALYSIS SUCCESSFUL, you can browse http://ee89-megan-us.ngrok.io/dashboard?id=realtor
+16:00:56.635 INFO: Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+16:00:56.635 INFO: More about the report processing at http://ee89-megan-us.ngrok.io/api/ce/task?id=AXntbaWH1NwtQI6X9hcQ
+16:00:56.637 DEBUG: Post-jobs : 
+16:00:56.639 INFO: Analysis total time: 12.248 s
+16:00:56.640 INFO: ------------------------------------------------------------------------
+16:00:56.640 INFO: EXECUTION SUCCESS
+16:00:56.640 INFO: ------------------------------------------------------------------------
+16:00:56.641 INFO: Total time: 14.107s
+16:00:56.736 INFO: Final Memory: 11M/54M
+16:00:56.736 INFO: ------------------------------------------------------------------------

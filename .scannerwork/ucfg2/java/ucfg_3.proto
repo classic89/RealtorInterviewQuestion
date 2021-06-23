@@ -1,139 +1,0 @@
-
-CAnagramFinder#readDictionary(Ljava/lang/String;)Ljava/util/HashMap;P
-F/Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.java$) $(7"14*í
-13P
-F/Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.java( ((%vt
-P
-F/Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.java( ((
-%2java.io.File"java.io.Fileª
-∏
-P
-F/Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.java( ((&
-%3"(java.io.File#<init>(Ljava/lang/String;)V*
-
-%2java.io.File*
-
-fromPathjava.lang.String*
-12*ë
-14P
-F/Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.java%, %(JÄ~
-P
-F/Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.java%0 %(H
-%0java.util.HashMap"java.util.HashMapì
-ê
-P
-F/Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.java%, %(J
-%1"java.util.HashMap#<init>()V*
-
-%0java.util.HashMapô
-ñ
-P
-F/Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.java% %(K!
-myDictionaryjava.util.HashMap"__id*
-
-%0java.util.HashMap*
-13*Ö
-4P
-F/Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.java/ /(®•
-P
-F/Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.java/ /(
-%11void"java.util.Scanner#close()V*
-
-myReaderjava.util.Scanner2close()*
-1*•
-5P
-F/Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.java- -(-«
-ƒ
-P
-F/Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.java- -(-
-%10java.lang.Integer"__mapSet*#
-!
-myDictionaryjava.util.HashMap*
-
-datajava.lang.String*
-	
-%9int*
-10*ë
-6P
-F/Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.java, ,(!è
-å
-P
-F/Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.java, ,(!
-datajava.lang.String"__id*
-
-%8java.lang.String¢ü
-P
-F/Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.java- -(,	
-%9int"java.lang.String#length()I*
-
-datajava.lang.String2length()*
-5*π
-7P
-F/Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.java+ +(*è
-å
-P
-F/Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.java+ +(*
-datajava.lang.String"__id*
-
-%7java.lang.String «
-P
-F/Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.java, ,(!
-%8java.lang.String"0java.lang.String#toLowerCase()Ljava/lang/String;*
-
-datajava.lang.String2toLowerCase()*
-6*ß
-8P
-F/Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.java+ +( «
-P
-F/Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.java+ +()
-%7java.lang.String".java.util.Scanner#nextLine()Ljava/lang/String;*
-
-myReaderjava.util.Scanner2
-nextLine()*
-7*ó
-10P
-F/Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.java* *(∂≥
-P
-F/Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.java* *(#
-%6boolean" java.util.Scanner#hasNextLine()Z*
-
-myReaderjava.util.Scanner2hasNextLine()*
-4
-8*Ù
-11P
-F/Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.java) )(-ï
-í
-P
-F/Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.java) )(-
-myReaderjava.util.Scanner"__id*
-
-%4java.util.Scanner*
-10*©
-12P
-F/Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.java( (('â
-Ü
-P
-F/Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.java( (('
-myFilejava.io.File"__id*
-
-%2java.io.FileÄ~
-P
-F/Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.java) )($
-%4java.util.Scanner"java.util.Scannerª
-∏
-P
-F/Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.java) )(,
-%5")java.util.Scanner#<init>(Ljava/io/File;)V*
-
-%4java.util.Scanner*
-
-myFilejava.io.File*
-11*Œ
-1P
-F/Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.java4 4("w
-P
-F/Users/mlwilson/my_volumes/RealtorInterviewQuestion/AnagramFinder.java4 4(#
-!
-myDictionaryjava.util.HashMap:
-fromPathjava.lang.StringB"
-AnagramFinder
