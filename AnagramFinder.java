@@ -7,14 +7,17 @@ import java.util.Map;
 import java.util.Set;
 import java.util.Arrays;
 import java.util.logging.Logger;
+import java.util.logging.Level;
 
 class AnagramFinder {
+
+  private final static Logger logger = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
   public AnagramFinder(String[] args) {
     if (args.length > 0) {
       AnagramFinder.play(args[0]);
     } else {
-      Logger.log("Error: argument not included. Please provide a text file. \n");
+      logger.log(Level.INFO, "Error: argument not included. Please provide a text file. \n");
       System.exit(1);
     }
   }
@@ -47,7 +50,7 @@ class AnagramFinder {
       }
       myReader.close();
     } catch (FileNotFoundException e) {
-      Logger.log("Error: File not found.");
+      logger.log(Level.INFO, "Error: File not found.");
       e.printStackTrace();
     }
     return myDictionary;
@@ -87,8 +90,7 @@ class AnagramFinder {
     System.out.println("Dictionary loaded in " + timeElapsed + " ms\n");
 
     Scanner console = new Scanner(System.in);
-    boolean running;
-    running = true;
+    boolean running = true;
 
     while (running) {
       System.out.print("AnagramFinder>");
