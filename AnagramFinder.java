@@ -6,6 +6,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 import java.util.Arrays;
+import java.util.logging.Logger;
 
 class AnagramFinder {
 
@@ -13,7 +14,7 @@ class AnagramFinder {
     if (args.length > 0) {
       AnagramFinder.play(args[0]);
     } else {
-      System.out.println("Error: argument not included. Please provide a text file. \n");
+      Logger.log("Error: argument not included. Please provide a text file. \n");
       System.exit(1);
     }
   }
@@ -46,7 +47,7 @@ class AnagramFinder {
       }
       myReader.close();
     } catch (FileNotFoundException e) {
-      System.out.println("An error occurred: File not found.");
+      Logger.log("Error: File not found.");
       e.printStackTrace();
     }
     return myDictionary;
@@ -86,7 +87,8 @@ class AnagramFinder {
     System.out.println("Dictionary loaded in " + timeElapsed + " ms\n");
 
     Scanner console = new Scanner(System.in);
-    boolean running = true;
+    boolean running;
+    running = true;
 
     while (running) {
       System.out.print("AnagramFinder>");
