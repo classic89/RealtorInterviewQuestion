@@ -1,6 +1,0 @@
-projectKey=realtor
-serverUrl=http://localhost:9000
-serverVersion=8.9.0.43852
-dashboardUrl=http://localhost:9000/dashboard?id=realtor
-ceTaskId=AXnYQ9i_lEZGV5n_y7aC
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AXnYQ9i_lEZGV5n_y7aC
