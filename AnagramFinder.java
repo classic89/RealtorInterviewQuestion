@@ -11,7 +11,7 @@ import java.util.logging.Level;
 
 class AnagramFinder {
 
-  private final static Logger logger = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
+  private static final Logger logger = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
   public AnagramFinder(String[] args) {
     if (args.length > 0) {
@@ -33,8 +33,7 @@ class AnagramFinder {
   public static String alphabetize(String word) {
     char[] charArray = word.toCharArray();
     Arrays.sort(charArray);
-    String sortedString = new String(charArray);
-    return sortedString;
+    return new String(charArray);
   }
 
   public static HashMap<String, Integer> readDictionary(String fromPath) { // Fuck String, String
