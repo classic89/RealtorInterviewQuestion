@@ -54,6 +54,24 @@ class AnagramFinder {
     }
     return myDictionary;
   }
+  public static HashMap<String, Integer> DELETE_THIS_FUNCTION (String fromPath) { // Fuck String, String
+    HashMap<String, Integer> myDictionary = new HashMap<String, Integer>();
+
+    try {
+      File myFile = new File(fromPath);
+      Scanner myReader = new Scanner(myFile);
+      while (myReader.hasNextLine()) {
+        String data = myReader.nextLine();
+        data = data.toLowerCase();
+        myDictionary.put(data, data.length());
+      }
+      myReader.close();
+    } catch (FileNotFoundException e) {
+      logger.log(Level.INFO, "Error: File not found.");
+      e.printStackTrace();
+    }
+    return myDictionary;
+  }
 
   public static <K, V> Set<K> getKeys(Map<K, V> map, V value) {
     Set<K> keys = new HashSet<>();
