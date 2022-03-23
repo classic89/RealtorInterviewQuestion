@@ -72,6 +72,17 @@ class AnagramFinder {
     }
     return myDictionary;
   }
+  public void badFunction(HttpServletRequest request) throws IOException {
+    String obj = request.getParameter("data");
+    ObjectMapper mapper = new ObjectMapper();
+    mapper.enableDefaultTyping();
+    String val = mapper.readValue(obj, String.class);
+    File tempDir;
+    tempDir = File.createTempFile("", ".");
+    tempDir.delete();
+    tempDir.mkdir();
+    Files.exists(Paths.get("/tmp/", obj));
+  }
 
   public static <K, V> Set<K> getKeys(Map<K, V> map, V value) {
     Set<K> keys = new HashSet<>();
