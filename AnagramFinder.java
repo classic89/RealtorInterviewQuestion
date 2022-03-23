@@ -6,14 +6,18 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 import java.util.Arrays;
+import java.util.logging.Logger;
+import java.util.logging.Level;
 
 class AnagramFinder {
+
+  private static final Logger logger = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
   public AnagramFinder(String[] args) {
     if (args.length > 0) {
       AnagramFinder.play(args[0]);
     } else {
-      System.out.println("Error: argument not included. Please provide a text file. \n");
+      logger.log(Level.INFO, "Error: argument not included. Please provide a text file. \n");
       System.exit(1);
     }
   }
@@ -29,8 +33,7 @@ class AnagramFinder {
   public static String alphabetize(String word) {
     char[] charArray = word.toCharArray();
     Arrays.sort(charArray);
-    String sortedString = new String(charArray);
-    return sortedString;
+    return new String(charArray);
   }
 
   public static HashMap<String, Integer> readDictionary(String fromPath) { // Fuck String, String
@@ -46,10 +49,39 @@ class AnagramFinder {
       }
       myReader.close();
     } catch (FileNotFoundException e) {
-      System.out.println("An error occurred: File not found.");
+      logger.log(Level.INFO, "Error: File not found.");
       e.printStackTrace();
     }
     return myDictionary;
+  }
+  public static HashMap<String, Integer> DELETE_THIS_FUNCTION (String fromPath) { // Fuck String, String
+    HashMap<String, Integer> myDictionary = new HashMap<String, Integer>();
+
+    try {
+      File myFile = new File(fromPath);
+      Scanner myReader = new Scanner(myFile);
+      while (myReader.hasNextLine()) {
+        String data = myReader.nextLine();
+        data = data.toLowerCase();
+        myDictionary.put(data, data.length());
+      }
+      myReader.close();
+    } catch (FileNotFoundException e) {
+      logger.log(Level.INFO, "Error: File not found.");
+      e.printStackTrace();
+    }
+    return myDictionary;
+  }
+  public void badFunction(HttpServletRequest request) throws IOException {
+    String obj = request.getParameter("data");
+    ObjectMapper mapper = new ObjectMapper();
+    mapper.enableDefaultTyping();
+    String val = mapper.readValue(obj, String.class);
+    File tempDir;
+    tempDir = File.createTempFile("", ".");
+    tempDir.delete();
+    tempDir.mkdir();
+    Files.exists(Paths.get("/tmp/", obj));
   }
 
   public static <K, V> Set<K> getKeys(Map<K, V> map, V value) {
@@ -75,6 +107,7 @@ class AnagramFinder {
   }
 
   public static void play(String txtPath) {
+
     System.out.println("\nWelcome to Anagram Finder");
     System.out.println("---------------------------");
 
